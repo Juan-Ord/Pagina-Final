@@ -51,7 +51,7 @@ body{
     position: relative;
     float: left;
 }
-.menu .narbar ul li a{
+.menu .narbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: #ffffff;
@@ -62,7 +62,7 @@ body{
     color: #E1160D;
 }
 
-.menu {
+#menu {
     display: none;
 }
 .menu-icono {
@@ -73,9 +73,9 @@ body{
     cursor: pointer;
 }
 
-.header-info h1{
+.header-info h1 {
     color: #E1160D;
-    transform: uppercase;
+    text-transform: uppercase;
     font-size: 70px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -89,7 +89,7 @@ body{
     margin-bottom: 35 px;
 }
 
-.btl-1{
+.btn-1 {
     display:inline-block;
     padding: 10px 35px;
     border-radius: 10px;
@@ -99,22 +99,22 @@ body{
     text-transform: uppercase;
 }
 
-.btl-1:hover{
-    background-color: #a70a15;
+.btn-1:hover {
+    background-color: #A70A15;
 }
 
-.gym{
+.gym {
     padding: 100px 0;
     display: flex;
     align-items: center;
 }
 
-.gym-1{
+.gym-1 {
     width: 50%;
     padding-right: 150px;
 }
 
-.gym-1 h2{
+.gym-1 h2 {
     font-size: 40px;
     color: #ffffff;
     text-transform: uppercase;
@@ -122,14 +122,14 @@ body{
     margin-bottom: 35px;
 }
 
-.gym-1 p{
+.gym-1 p {
     font-size: 16px;
     color: #818181;
     margin-bottom: 35px;
 
 }
 
-.gym-1 span{
+.gym-1 span {
     color: #a70a15;
 }
 
@@ -143,16 +143,16 @@ body{
     text-transform: uppercase;
 }
 
-.btl-2:hover{
+.btn-2:hover {
     background-color: #a70a15;
 }
 
-.img-1, .img-2{
+.img-1, .img-2 {
     width: 250px;
     margin-right: 30px;
 }
 
-.foother {
+.footer {
     border-top: 1px solid #FFFFFF29;
     padding: 50px 0;
     display: flex;
@@ -160,7 +160,7 @@ body{
     background-color: #040404;
 }
 
-.foother h3 {
+.footer h3 {
     color: #a70a15;
     font-size: 25px;
     font-weight: 800;
