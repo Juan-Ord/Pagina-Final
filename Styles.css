@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
  *{
     margin: 0;
@@ -32,6 +32,41 @@ body{
 .menu{
     position: absolute;
     top: 0;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(img/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     display: flex;
@@ -40,34 +75,42 @@ body{
     z-index: 1000;
     background-color: #040404;
     border-bottom: 1px solid #FFFFFF29;
+    padding: 20px;
 }
 
-.logo { color: #a70a15;
+.logo {
+    color: #a70a15;
     font-size: 25px;
     font-weight: 800;
 }
 
-.menu .narbar ul li{
-    position: relative;
-    float: left;
+.menu .navbar ul {
+    display: flex;
 }
-.menu .narbar ul li a {
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: #ffffff;
     display: block;
 }
 
-.menu .narbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: #E1160D;
 }
 
 #menu {
     display: none;
 }
+
 .menu-icono {
     width: 25px;
 }
+
 .menu label {
     display: none;
     cursor: pointer;
@@ -86,11 +129,11 @@ body{
     color: #ffffff;
     font-size: 22px;
     text-transform: capitalize;
-    margin-bottom: 35 px;
+    margin-bottom: 35px;
 }
 
 .btn-1 {
-    display:inline-block;
+    display: inline-block;
     padding: 10px 35px;
     border-radius: 10px;
     background-color: #E1160D;
@@ -126,14 +169,13 @@ body{
     font-size: 16px;
     color: #818181;
     margin-bottom: 35px;
-
 }
 
 .gym-1 span {
     color: #a70a15;
 }
 
-.btn-2{
+.btn-2 {
     display: inline-block;
     padding: 8px 45px;
     border-radius: 20px;
@@ -147,7 +189,12 @@ body{
     background-color: #a70a15;
 }
 
-.img-1, .img-2 {
+.gym-2 {
+    display: flex;
+}
+
+.img-1,
+.img-2 {
     width: 250px;
     margin-right: 30px;
 }
@@ -170,7 +217,7 @@ body{
     display: flex;
 }
 
-.links ul li{
+.links ul li {
     margin-right: 35px;
 }
 
@@ -178,15 +225,12 @@ body{
     color: #818181;
 }
 
-@media(max-width:991px) {
-    .menu {
-        padding: 20px;
-    }
+@media (max-width: 991px) {
     .menu label {
         display: initial;
     }
 
-    .menu .narbar {
+    .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -195,15 +239,19 @@ body{
         display: none;
     }
 
-    .menu .narbar ul li {
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
         width: 100%;
     }
 
-    .menu .narbar ul li a {
+    .menu .navbar ul li a {
         width: 100%;
     }
 
-    #menu:checked  .narbar {
+    #menu:checked ~ .navbar {
         display: initial;
     }
 
@@ -234,7 +282,7 @@ body{
     }
 
     .btn-2 {
-         margin-bottom: 35px;
+        margin-bottom: 35px;
     }
 
     .gym-2 {
@@ -244,7 +292,8 @@ body{
         align-items: center;
     }
 
-    .img-1, .img-2 {
+    .img-1,
+    .img-2 {
         margin: 0 0 20px 0;
     }
 
@@ -258,7 +307,6 @@ body{
     }
 
     .links ul li {
-        margin: 0 10 px;
+        margin: 0 10px;
     }
-    
 }
